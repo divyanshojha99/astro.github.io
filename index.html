@@ -157,7 +157,7 @@
                         <img src="images/about-1.jpg" alt="" class="img-fluid img-rounded fat-ab">
                     </div>
                     <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="astrohere" data-version="v1">
-                        <a style="font-type=" normal ";" class="badge-base__link LI-simple-link" href="https://linkedin/astrohere/?trk=profile-badge"></a>
+                        <a style="font-type=" normal class="badge-base__link LI-simple-link" href="https://linkedin/astrohere/?trk=profile-badge"></a>
                     </div>
 
                     <!-- end media -->
@@ -180,71 +180,54 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <div class="contact_form">
-                        <div id="message"></div>
-                        <form id="contactForm" name="sentMessage" action="mail/contact_me.php" novalidate="novalidate">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                    <div class="form-group">
-                                        <input class="form-control" id="email" type="email" placeholder="Your Mail-ID" required="required" data-validation-required-message="Please enter your email address for response.">
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <textarea class="form-control" id="message" placeholder="Your Message" required="required" data-validation-required-message="your message"></textarea>
-                                        <p class="help-block text-danger"></p>
-                                    </div>
-                                </div>
-                                <div class="clearfix"></div>
-                                <div class="col-lg-12 text-center">
-                                    <div id="success"></div>
-                                    <button id="sendMessageButton" class="sim-btn btn-new from-middle animated" data-text="Send Message" type="submit">Send</button>
-                                </div>
-                            </div>
-                        </form>
+
+                    <div class="feedbox">
+                        <div class="feed">
+                            <form action="mailto:divyanshojha2003@gmail.com" method="post" enctype="text/plain">
+                                <label>Your Name</label><br>
+                                <input type="text" name="Name" class="fname" required="required"><br>
+                                <label>Email</label><br>
+                                <input type="email" name="Mail ID" required="required"><br>
+                                <label>Message</label><br>
+                                <input type="text" name="My Message" required="required"><br>
+                                <label>Aditional Details</label><br>
+                                <textarea name="Additional Details"></textarea><br>
+                                <button type="submit" id="csubmit">Send Message</button>
+                            </form>
+                        </div>
                     </div>
+                    <!-- end container -->
                 </div>
-                <!-- end col -->
-            </div>
-            <!-- end row -->
-        </div>
-        <!-- end container -->
-    </div>
-    <!-- end section -->
+                <!-- end section -->
 
-    <div class="copyrights">
-        <div class="container">
-            <div class="footer-distributed">
-                <div class="footer-left">
-                    <p class="ending">Thanks for Visiting.<br> <a href="https://github.com/divyanshojha99" style="color: rgb(127, 255, 133);">&copy; Divyansh Ojha </a> </p>
+                <div class="copyrights">
+                    <div class="container">
+                        <div class="footer-distributed">
+                            <div class="footer-left">
+                                <p class="ending">Thanks for Visiting.<br> <a href="https://github.com/divyanshojha99" style="color:#000000" ;>&copy; Divyansh Ojha </a> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end container -->
                 </div>
-            </div>
-        </div>
-        <!-- end container -->
-    </div>
-    <!-- end copyrights -->
+                <!-- end copyrights -->
 
-    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+                <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
 
-    <!-- ALL JS FILES -->
-    <script src="js/all.js"></script>
-    <!-- Camera Slider -->
-    <script src="js/jquery.mobile.customized.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/parallaxie.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/animated-slider.js"></script>
-    <!-- Contact form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-    <!-- ALL PLUGINS -->
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-    <script src="js/custom.js"></script>
+                <!-- ALL JS FILES -->
+                <script src="js/all.js"></script>
+                <!-- Camera Slider -->
+                <script src="js/jquery.mobile.customized.min.js"></script>
+                <script src="js/jquery.easing.1.3.js"></script>
+                <script src="js/parallaxie.js"></script>
+                <script src="js/slick.min.js"></script>
+                <script src="js/animated-slider.js"></script>
+                <!-- Contact form JavaScript -->
+                <script src="js/jqBootstrapValidation.js"></script>
+                <script src="js/contact_me.js"></script>
+                <!-- ALL PLUGINS -->
+                <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+                <script src="js/custom.js"></script>
 </body>
 
 </html>
