@@ -2075,7 +2075,8 @@ select.mobile-device {
     color: #bcbcbc !important;
 }
 
-.contact_form {
+
+/*.contact_form {
     border: 1px solid #ededed;
     box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1);
     background-color: transparent;
@@ -2115,7 +2116,7 @@ select.mobile-device {
 
 .contact_form .form-control::-ms-input-placeholder {
     color: #bcbcbc;
-}
+}*/
 
 #contact {
     background: url(images/bg.png) no-repeat center center #333333;
@@ -2139,10 +2140,10 @@ select.mobile-device {
     left: 0px;
 }
 
-
+*/
 /*------------------------------------------------------------------
     Blog
--------------------------------------------------------------------*/
+-------------------------------------------------------------------
 
 .snip1401 {
     position: relative;
@@ -2255,7 +2256,7 @@ select.mobile-device {
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
-}
+}*/
 
 
 /*------------------------------------------------------------------
@@ -2334,7 +2335,7 @@ select.mobile-device {
     margin-bottom: 10px;
     display: block;
     width: 100%;
-    border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+    border-bottom: 1px dashed rgba(73, 69, 69, 0.1);
     padding-bottom: 10px;
 }
 
@@ -2475,7 +2476,7 @@ select.mobile-device {
 -------------------------------------------------------------------*/
 
 .progress {
-    background-color: #f2f3f5;
+    background-color: #3f64ae;
     border-radius: 0;
     box-shadow: none;
     height: 5px;
