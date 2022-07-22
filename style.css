@@ -2122,7 +2122,8 @@ select.mobile-device {
     background: url(images/bg.png) no-repeat center center #333333;
 }
 
-#contact .section-title p {
+
+/*#contact .section-title p {
     color: #ffffff;
 }
 
@@ -2141,6 +2142,8 @@ select.mobile-device {
 }
 
 */
+
+
 /*------------------------------------------------------------------
     Blog
 -------------------------------------------------------------------
@@ -2746,7 +2749,8 @@ select.mobile-device {
     BUTTONS
 -------------------------------------------------------------------*/
 
-.navbar-default .btn-light {
+
+/*.navbar-default .btn-light {
     padding: 0 20px;
     margin-left: 15px;
 }
@@ -2775,7 +2779,7 @@ select.mobile-device {
 .btn-light:focus {
     border-color: rgba(255, 255, 255, 0.6);
     color: rgba(255, 255, 255, 0.6);
-}
+}*/
 
 .badge-base {
     align-self: center;
