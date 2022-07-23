@@ -2728,7 +2728,7 @@ select.mobile-device {
 }
 
 .feed #csubmit {
-    margin-top: 10px;
+    margin-top: 5px;
     background: linear-gradient(to right, #8537fa, #df27d6);
     border-radius: 5px;
     border-style: none;
