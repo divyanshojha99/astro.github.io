@@ -9,21 +9,15 @@ const nextConfig = {
         'user-images.githubusercontent.com'
       ], // List of allowed image domains
     },
+    output: 'export', // enables static export
+    basePath: '/astro.github.io', // GitHub repo name (important for routing)
+    images: {
+      unoptimized: true, // if using next/image
+    },
   }
   
   
   module.exports = nextConfig;
 
-
-  /** @type {import('next').NextConfig} */
-const nextConfigg = {
-  output: 'export', // enables static export
-  basePath: '/<repo-name>', // GitHub repo name (important for routing)
-  images: {
-    unoptimized: true, // if using next/image
-  },
-};
-
-module.exports = nextConfigg;
 
   
