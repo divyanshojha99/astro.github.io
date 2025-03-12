@@ -22,7 +22,7 @@ export const Project: FunctionComponent<Props> = ({
       {/* Section Heading */}
       <h2
         className={cn(
-          typography({ size: "text-3xl", weight: "bold" }),
+          typography({ size: "text-display-2xl", weight: "bold" }),
           "text-center"
         )}
       >
