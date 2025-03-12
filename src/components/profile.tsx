@@ -46,7 +46,7 @@ export const Profile: FunctionComponent<Props> = ({ containerClassName }) => {
 
       <div className="flex gap-2 max-sm:basis-full">
         <Button onClick={() => toast("Coming soon!")}>
-          <CalendarIcon /> Let&apos;s Connect on Call!
+          <CalendarIcon /> Lets Connect on Call!
         </Button>
 
         <DropdownMenu>
