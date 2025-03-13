@@ -1,230 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Basic -->
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<!-- Mobile Metas -->
-<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-<!-- Site Metas -->
-<title>ASTRO</title>
-<meta name="keywords" content="Divyansh ojha">
-<meta name="description" content="Its mine personal website..">
-<meta name="author" content="by divyansh">
-
-<!-- Site Icons -->
-<link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon" />
-<link rel="apple-touch-icon" href="images/apple-touch-icon.jpg">
-
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<!-- Site CSS -->
-<link rel="stylesheet" href="style.css">
-<!-- Responsive CSS -->
-<link rel="stylesheet" href="css/responsive.css">
-<!-- Custom CSS -->
-<link rel="stylesheet" href="css/custom.css">
-<script src="js/modernizr.js"></script>
-<!-- Modernizr -->
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Divyansh Ojha - Cybersecurity & Web Developer Portfolio">
+    <meta name="keywords" content="Divyansh Ojha, Portfolio, Cybersecurity, Developer, SAP, IXP Intern">
+    <meta name="author" content="Divyansh Ojha">
+    <title>Divyansh Ojha | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/script.js" defer></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['"Poppins"', 'sans-serif']
+                    },
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#10b981',
+                        dark: {
+                            100: '#374151',
+                            200: '#1f2937',
+                            300: '#111827'
+                        }
+                    },
+                    animation: {
+                        'bounce-slow': 'bounce 3s infinite'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
+<body class="font-poppins bg-gray-900 text-white dark">
 
-<body id="page-top" class="politics_version">
-
-    <!-- LOADER -->
-    <div id="preloader">
-        <div class="loader">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-    <!-- end loader -->
-    <!-- END LOADER -->
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <img class="img-fluid" src="images/logo.png" alt="logo" size=10px />
-            </a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav text-uppercase ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger active" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#about">About me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+<!-- Header & Navigation -->
+<header class="fixed top-0 left-0 w-full z-50 bg-gray-800 bg-opacity-70 backdrop-blur-lg">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+        <a href="#home" class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400">Divyansh Ojha</a>
+        <button id="menu-btn" class="md:hidden text-2xl focus:outline-none"><i class="fa fa-bars"></i></button>
+        <ul id="nav-menu" class="hidden md:flex space-x-8">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#achievements" class="nav-link">Achievements</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
     </nav>
+    <div id="mobile-menu" class="hidden md:hidden bg-gray-800 w-full">
+        <ul class="flex flex-col items-center py-4">
+            <li class="py-2"><a href="#home" class="nav-link">Home</a></li>
+            <li class="py-2"><a href="#about" class="nav-link">About</a></li>
+            <li class="py-2"><a href="#skills" class="nav-link">Skills</a></li>
+            <li class="py-2"><a href="#projects" class="nav-link">Projects</a></li>
+            <li class="py-2"><a href="#experience" class="nav-link">Experience</a></li>
+            <li class="py-2"><a href="#education" class="nav-link">Education</a></li>
+            <li class="py-2"><a href="#achievements" class="nav-link">Achievements</a></li>
+            <li class="py-2"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </div>
+</header>
 
-    <div id="home" class="ct-header ct-header--slider ct-slick-custom-dots">
-        <div class="ct-slick-homepage" data-arrows="true" data-autoplay="false">
+<main>
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center text-center px-4 pt-20 relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="particles"></div>
+        </div>
+        <div class="z-10 max-w-3xl">
+            <p class="text-blue-400 mb-4 tracking-wider">WELCOME TO MY PORTFOLIO</p>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400">Divyansh Ojha</span></h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-300">
+                <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="https://drive.google.com/file/d/1vWdKJU1LNWZM_sPv5-44PVY8SZVinTlm/view" download class="btn-primary">
+                    <i class="fas fa-download mr-2"></i>Download Resume
+                </a>
+                <a href="#contact" class="btn-secondary">
+                    <i class="fas fa-paper-plane mr-2"></i>Contact Me
+                </a>
+            </div>
+            <div class="mt-12 flex justify-center gap-6">
+                <a href="https://github.com/divyanshojha99" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/divyanshojha99/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:divyanshojha2003@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+918821890661" class="social-icon"><i class="fas fa-phone"></i></a>
+            </div>
+            <div class="mt-16 animate-bounce-slow">
+                <a href="#about" class="text-3xl text-gray-400 hover:text-white transition-colors">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
 
-            <div class="ct-header tablex item" data-background="uploads/banner-01.jpg">
-                <div class="ct-u-display-tablex">
-                    <div class="inner">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-8 col-lg-8 slider-inner">
-                                    <h1 class="big animated">Hey Divyansh Ojha here,I'm a CYBER Enthusiast || WEB & Software Developer </h1>
-                                    <p class="animated">Sophomore at Vellore Institute of Technology Bhopal(MP)..</p>
+    <!-- About -->
+    <section id="about" class="py-20 px-4">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="section-title">About Me</h2>
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-xl">
+                    <p class="text-lg leading-relaxed mb-4">
+                        I'm a Cybersecurity enthusiast and full-stack developer with proficiency in C++, Python, PHP, and JavaScript. I specialize in building secure web applications.
+                    </p>
+                    <p class="text-lg leading-relaxed mb-4">
+                        Currently working as an IXP Intern at SAP, focusing on Retrieval Augmented Generation (RAG) and contributing to SAP's internal GEN-AI Joule platform to enhance data retrieval and processing capabilities.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        I'm continuously expanding my AI-ML skillset by learning Agentic AI. Besides coding, I enjoy playing chess, cricket, and writing quotes.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-xl text-center hover:transform hover:scale-105 transition-transform">
+                        <div class="text-blue-400 text-4xl mb-2"><i class="fas fa-code"></i></div>
+                        <h3 class="text-xl font-semibold mb-2">Developer</h3>
+                        <p>Building elegant, responsive web applications with modern technologies</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-xl text-center hover:transform hover:scale-105 transition-transform">
+                        <div class="text-green-400 text-4xl mb-2"><i class="fas fa-shield-alt"></i></div>
+                        <h3 class="text-xl font-semibold mb-2">Cybersecurity</h3>
+                        <p>Ensuring applications are secure and protected from threats</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-xl text-center hover:transform hover:scale-105 transition-transform">
+                        <div class="text-purple-400 text-4xl mb-2"><i class="fas fa-robot"></i></div>
+                        <h3 class="text-xl font-semibold mb-2">AI-ML</h3>
+                        <p>Implementing intelligent solutions with machine learning</p>
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg shadow-xl text-center hover:transform hover:scale-105 transition-transform">
+                        <div class="text-yellow-400 text-4xl mb-2"><i class="fas fa-cloud"></i></div>
+                        <h3 class="text-xl font-semibold mb-2">Cloud</h3>
+                        <p>Deploying scalable solutions on cloud platforms</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                                </div>
+    <!-- Skills -->
+    <section id="skills" class="py-20 px-4 bg-gray-800">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="section-title">Skills & Tools</h2>
+            <div class="mb-12">
+                <h3 class="text-2xl font-semibold mb-6 text-blue-400">Technical Skills</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="skill-card">
+                        <i class="fab fa-html5 skill-icon"></i>
+                        <span>HTML/CSS</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-js skill-icon"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-react skill-icon"></i>
+                        <span>React.js</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-node-js skill-icon"></i>
+                        <span>Node.js</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-python skill-icon"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-code skill-icon"></i>
+                        <span>C++</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fab fa-php skill-icon"></i>
+                        <span>PHP</span>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-database skill-icon"></i>
+                        <span>SQL</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-2xl font-semibold mb-6 text-green-400">Specialized Skills</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="relative pt-1">
+                        <div class="flex mb-2 items-center justify-between">
+                            <div>
+                                <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full bg-blue-200 text-blue-600">
+                                    Web Development
+                                </span>
                             </div>
+                            <div class="text-right">
+                                <span class="text-xs font-semibold inline-block text-blue-400">90%</span>
+                            </div>
+                        </div>
+                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-700">
+                            <div style="width: 90%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-500"></div>
+                        </div>
+                    </div>
+                    <div class="relative pt-1">
+                        <div class="flex mb-2 items-center justify-between">
+                            <div>
+                                <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full bg-green-200 text-green-600">
+                                    Network Security
+                                </span>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-xs font-semibold inline-block text-green-400">85%</span>
+                            </div>
+                        </div>
+                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-700">
+                            <div style="width: 85%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-green-500"></div>
+                        </div>
+                    </div>
+                    <div class="relative pt-1">
+                        <div class="flex mb-2 items-center justify-between">
+                            <div>
+                                <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full bg-purple-200 text-purple-600">
+                                    AI-ML
+                                </span>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-xs font-semibold inline-block text-purple-400">80%</span>
+                            </div>
+                        </div>
+                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-700">
+                            <div style="width: 80%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-purple-500"></div>
+                        </div>
+                    </div>
+                    <div class="relative pt-1">
+                        <div class="flex mb-2 items-center justify-between">
+                            <div>
+                                <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full bg-yellow-200 text-yellow-600">
+                                    Cloud Services
+                                </span>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-xs font-semibold inline-block text-yellow-400">75%</span>
+                            </div>
+                        </div>
+                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-700">
+                            <div style="width: 75%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-yellow-500"></div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    
+    
+    <!-- Projects -->
+<section id="projects" class="py-20 px-4 bg-gray-900">
+    <div class="container mx-auto max-w-5xl">
+        <h2 class="section-title">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div class="bg-gray-800 p-6 rounded-lg shadow-xl hover:transform hover:scale-105 transition-transform">
+                <h3 class="text-xl font-semibold mb-2">Project 1: AI Finance Agent (AstraFi)</h3>
+                <p class="text-gray-400 mb-4">
+                    An AI-powered finance assistant using FastAPI, React.js, Crew AI, and Gemini LLM to handle real-time stock, forex, crypto, and investment queries through a conversational interface.
+                </p>
+                <a href="https://astra-fi.vercel.app/" target="_blank" class="text-blue-400 hover:underline">View Project</a>
+            </div>
+            
+            <div class="bg-gray-800 p-6 rounded-lg shadow-xl hover:transform hover:scale-105 transition-transform">
+                <h3 class="text-xl font-semibold mb-2">Project 2: E-Police MIS System</h3>
+                <p class="text-gray-400 mb-4">
+                    A fully functional E-Police Station system for Uttarakhand Police, built during DevBhoomi Cyber Hackathon (IIT Roorkee), enabling FIR management, case tracking, officer attendance, and crime hotspot analysis.
+                </p>
+                <a href="http://epolicesystem.42web.io/DEVBHOMMI/" target="_blank" class="text-blue-400 hover:underline">View Project</a>
+            </div>
+            
+            <!-- Add more projects as needed -->
+        </div>
+    </div>
+</section>
 
-            <div class="ct-header tablex item" data-background="uploads/banner-01.jpg">
-                <div class="ct-u-display-tablex">
-                    <div class="inner">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-8 col-lg-8 slider-inner">
-                                    <h1 class="big animated">Also a Competitive Programming Enthusiast</h1>
-                                    <p class="animated">Currently Learning Blockchain,Unreal Engine 5 and Next.js...</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<!-- Experience -->
+<section id="experience" class="py-20 px-4">
+    <div class="container mx-auto max-w-5xl">
+        <h2 class="section-title">Experience</h2>
+        <div class="space-y-8">
+            <div class="bg-gray-800 p-6 rounded-lg shadow-xl">
+                <h3 class="text-xl font-semibold mb-2">IXP Intern</h3>
+                <p class="text-gray-400 mb-2">SAP</p>
+                <p class="text-gray-400 mb-4">AUG'24 - Present</p>
+                <p class="text-gray-300">Focused on Retrieval Augmented Generation (RAG) and contributed to SAP's internal GEN-AI Joule platform to enhance data retrieval and processing capabilities.</p>
+            </div>
+            <!-- Add more experiences as needed -->
+        </div>
+    </div>
+</section>
+
+<!-- Education -->
+<section id="education" class="py-20 px-4 bg-gray-900">
+    <div class="container mx-auto max-w-5xl">
+        <h2 class="section-title">Education</h2>
+        <div class="space-y-8">
+            <div class="bg-gray-800 p-6 rounded-lg shadow-xl">
+                <h3 class="text-xl font-semibold mb-2">Integrated MTech in Computer Science With Cyber Security</h3>
+                <p class="text-gray-400 mb-2">VIT BHopal University</p>
+                <p class="text-gray-400 mb-4">2020 - 2025</p>
+                <p class="text-gray-300">Final Year with a focus on DSA, AI-ML, cybersecurity and web development, achieving a GPA of 9.01</p>
+            </div>
+            <!-- Add more education details as needed -->
+        </div>
+    </div>
+</section>
+
+<!-- Achievements -->
+<section id="achievements" class="py-20 px-4">
+    <div class="container mx-auto max-w-5xl">
+        <h2 class="section-title">Achievements</h2>
+        <div class="space-y-8">
+
+            <div class="bg-gray-800 p-6 rounded-lg shadow-xl">
+                <h3 class="text-xl font-semibold mb-2">🏆 Semifinalist - Amazon HackOn 2024 (Team ASTRO)</h3>
+                <p class="text-gray-300">
+                    Selected as a semifinalist in Amazon's flagship HackOn 2024, showcasing innovative AI-based solutions with Team ASTRO.
+                </p>
             </div>
 
-            <div class="ct-header tablex item" data-background="uploads/banner-01.jpg">
-                <div class="ct-u-display-tablex">
-                    <div class="inner">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-8 col-lg-8 slider-inner">
-                                    <h1 class="big animated">Welcome in My Personal Website</h1>
-                                    <p class="animated">Currently I'm Pursuing Integrated M-Tech CSE "CYBER Security".</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-xl">
+                <h3 class="text-xl font-semibold mb-2">🏅 Finalist - DevBhoomi Cyber Hackathon (IIT Roorkee)</h3>
+                <p class="text-gray-300">
+                    Built a fully functional E-Police MIS system for Uttarakhand Police, managing FIRs, officer tracking, and crime hotspots (Team CYBER-TM).
+                </p>
+            </div>
 
-                </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-xl">
+                <h3 class="text-xl font-semibold mb-2">🎯 Finalist - Manipal Hackathon (Manipal Institute of Technology)</h3>
+                <p class="text-gray-300">
+                    Selected as a finalist at Manipal Hackathon with Team ASTRO, creating innovative tech solutions.
+                </p>
+            </div>
+
+
+            <div class="bg-gray-800 p-6 rounded-lg shadow-xl">
+                <h3 class="text-xl font-semibold mb-2">👨‍💻 Competitive Programming Achievements</h3>
+                <p class="text-gray-300">
+                    <ul class="list-disc ml-5">
+                        <li>LeetCode Global Rank ~10K, 35+ contests</li>
+                        <li>GFG University Rank 6 & Global Rank 1540, 25+ contests</li>
+                        <li>CodeChef 3-Star Coder (Global Rank 16865), 22+ contests</li>
+                        <li>Code360 Grand Master (Top 1%), 40+ contests</li>
+                        <li>Solved 1200+ DSA problems</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="bg-gray-800 p-6 rounded-lg shadow-xl">
+                <h3 class="text-xl font-semibold mb-2">💼 Leadership - President, Microsoft Technical Club (VIT Bhopal)</h3>
+                <p class="text-gray-300">
+                    Leading the Microsoft Technical Club, organizing coding workshops, hackathons, and tech events including Code Garuda and Essential Coding Practices Workshop with SDE-2 Microsoft.
+                </p>
             </div>
 
         </div>
-        <!-- .ct-slick-homepage -->
     </div>
-    <!-- .ct-header -->
+</section>
 
-    <div id="about" class="section wb">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="message-box">
-                        <h2 style="color: rgb(37, 3, 56;">About Divyansh...</h2>
-                        <p>I'm familiar with various programming languages but right now, I do the most programming in python, C++ and some occasionally programming in java. I mostly create desktop software or embedded systems and occasionally I have to
-                            build websites and applications for which I require JS,PHP, I'm also trying to make static hold on react and next JS.. I also like to Penetration testing for perform it mostly using Kali-Linux.
-                        </p>
-                        <p>Besides of all Tech,I like to play cricket,chess and watching some masterpiece movies and webshows,also like to write quotes.<br>Sometimes I read Novels and Tech Blogs..
-                        </p>
 
-                        <ul>
-                            <li><b style="color: rgb(37, 3, 56);">Connect to me..</b></li>
-
-                            <li><a href="https://twitter.com/the_astro99"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="https://www.facebook.com/divyansh.ojha.4/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="https://www.instagram.com/divyansh_4980/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                            <li><a href="https://github.com/divyanshojha99"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                            <li><a href="mailto:divyanshojha2003@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-
-                        </ul>
-                    </div>
-                    <!-- end messagebox -->
+    <!-- Contact -->
+    <section id="contact" class="py-20 px-4 bg-gray-900">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="section-title">Contact Me</h2>
+            <form action="php/contact.php" method="POST" class="bg-gray-800 p-6 rounded-lg shadow-xl">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium text-gray-300">Name</label>
+                    <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 bg-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
                 </div>
-                <!-- end col -->
-                <div class="col-md-6">
-                    <div class="right-box-pro wow fadeIn">
-                        <img src="images/about-1.jpg" alt="" class="img-fluid img-rounded fat-ab">
-                    </div>
-                    <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="astrohere" data-version="v1">
-                        <a style="font-type=" normal class="badge-base__link LI-simple-link" href="https://linkedin/astrohere/?trk=profile-badge"></a>
-                    </div>
-
-                    <!-- end media -->
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-gray-300">Email</label>
+                    <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 bg-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
                 </div>
-                <!-- end col -->
-
-            </div>
-            <!-- end row -->
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-medium text-gray-300">Message</label>
+                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-3 py-2 bg-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
         </div>
-        <!-- end container -->
-    </div>
-    <!-- end section -->
-    <div id="contact" class="section db">
-        <div class="container">
-            <div class="section-title text-center">
-                <h3>Contact2me</h3>
-                <p>Any doubt,suggestion,etc</p>
-            </div>
-            <!-- end title -->
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="feedbox">
-                        <div class="feed">
-                            <form action="mailto:divyanshojha2003@gmail.com" method="post" autocomplete="off" enctype="text/plain">
-                                <label>Your Name</label><br>
-                                <input type="text" name="Name" class="fname" required="required"><br>
-                                <label>Email</label><br>
-                                <input type="email" name="Mail ID" required="required"><br>
-                                <label>Message</label><br>
-                                <input type="text" name="My Message" required="required"><br>
-                                <label>Aditional Details</label><br>
-                                <textarea name="Additional Details"></textarea><br>
-                                <button type="submit" id="csubmit">Send Message</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <!-- end section -->
+    </section>
+</main>
 
-                <div class="copyrights">
-                    <div class="container">
-                        <div class="footer-distributed">
-                            <div class="footer-left">
-                                <p class="ending">Thanks for Visiting.<br> <a href="https://github.com/divyanshojha99" style="color:#000000" ;>&copy; Divyansh Ojha </a> </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end container -->
-                </div>
-                <!-- end copyrights -->
+<!-- Footer -->
+<footer class="py-6 bg-gray-800 text-center text-gray-400">
+    <p>&copy; 2024 Divyansh Ojha. All rights reserved.</p>
+</footer>
 
-                <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
-
-                <!-- ALL JS FILES -->
-                <script src="js/all.js"></script>
-                <!-- Camera Slider -->
-                <script src="js/jquery.mobile.customized.min.js"></script>
-                <script src="js/jquery.easing.1.3.js"></script>
-                <script src="js/parallaxie.js"></script>
-                <script src="js/slick.min.js"></script>
-                <script src="js/animated-slider.js"></script>
-                <!-- Contact form JavaScript -->
-                <script src="js/jqBootstrapValidation.js"></script>
-                <script src="js/contact_me.js"></script>
-                <!-- ALL PLUGINS -->
-                <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-                <script src="js/custom.js"></script>
 </body>
-
 </html>
