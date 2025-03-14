@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <p class="text-gray-300 mb-2"><strong>Total Solved:</strong> ${data.totalProblemsSolved}</p>
                     <p class="text-gray-300 mb-2"><strong>School/Basic:</strong> ${data.School}/${data.Basic}</p>
                     <p class="text-gray-300 mb-2"><strong>Easy/Medium/Hard:</strong> ${data.Easy}/${data.Medium}/${data.Hard}</p>
-                    <a href="https://auth.geeksforgeeks.org/user/divyanshojha2003/practice/" target="_blank"
+                    <a href="https://auth.geeksforgeeks.org/user/divyanshojha2003" target="_blank"
                         class="inline-block mt-4 px-6 py-2 bg-gradient-to-r from-green-500 to-teal-500 text-white rounded-lg shadow hover:shadow-lg transform hover:scale-105 transition-transform">
                         Visit GFG Profile 🚀
                     </a>
@@ -83,7 +83,7 @@ function loadCodingNinjasCard() {
 
     const cardHtml = `
     <div class="bg-gray-800 p-6 rounded-2xl shadow-xl hover:transform hover:scale-105 transition-transform w-full max-w-lg mx-auto">
-        <h3 class="text-2xl font-semibold text-red-400 mb-4">🔥 Coding Ninjas Stats</h3>
+        <h3 class="text-2xl font-semibold text-red-400 mb-4">👨‍💻Coding Ninjas Stats</h3>
 
         <div class="text-center mb-4">
             <p class="text-white text-3xl font-bold">${stats.problemsSolved}</p>

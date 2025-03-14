@@ -95,9 +95,8 @@
             </div>
             <div class="mt-12 flex justify-center gap-6">
                 <a href="https://github.com/divyanshojha99" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/divyanshojha99/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/astrohere" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
                 <a href="mailto:divyanshojha2003@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
-                <a href="tel:+918821890661" class="social-icon"><i class="fas fa-phone"></i></a>
             </div>
             <div class="mt-16 animate-bounce-slow">
                 <a href="#about" class="text-3xl text-gray-400 hover:text-white transition-colors">
@@ -268,12 +267,12 @@
             
             <!-- Project 1 -->
             <div class="relative group overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-shadow bg-white">
-              <img src="https://private-user-images.githubusercontent.com/91757380/422289122-2cf088c7-8107-4f5a-bfec-9003736e77df.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDE5Njc5MTIsIm5iZiI6MTc0MTk2NzYxMiwicGF0aCI6Ii85MTc1NzM4MC80MjIyODkxMjItMmNmMDg4YzctODEwNy00ZjVhLWJmZWMtOTAwMzczNmU3N2RmLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMTQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzE0VDE1NTMzMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTNiOGI2Y2Y0NjdiYmI3MGY2YmIyMjUyY2M4NzQwZGVmZmM2NzVlMTZjOTNiOThiZjg2OTM0NzI3Zjc5Yjk3NDImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.7cZ1P_xQ8v9ulTvIfVBH5MaeIgEHH-01cnmZu1hJD9s"
+              <img src="/images/asthafi.png"
                    alt="AI Finance Agent"
                    class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-t-2xl">
       
               <div class="p-6 space-y-4">
-                <h3 class="text-2xl font-bold text-gray-800">AI Finance Agent (AstraFi)</h3>
+                <h3 class="text-2xl font-bold text-gray-800">AI Finance Agent (AsthaFi)</h3>
                 <p class="text-gray-700 text-sm leading-relaxed h-32 overflow-auto">
                   AI-based personal finance assistant developed with Agentic AI, managing real-time financial queries like stock prices, forex rates, crypto updates, market news, and investment suggestions. Built with a powerful backend and conversational AI for seamless user interaction.
                 </p>
@@ -288,7 +287,7 @@
                   <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">GenAI</span>
                 </div>
       
-                <a href="https://astra-fi.vercel.app/" target="_blank"
+                <a href="https://astha-fi.vercel.app/" target="_blank"
                    class="inline-block mt-4 bg-blue-600 text-white py-2 px-6 rounded-xl hover:bg-green-700 transition-colors shadow-md">View Project</a>
               </div>
             </div>
@@ -312,6 +311,7 @@
                   <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded">JavaScript</span>
                   <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">PHP</span>
                   <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">SQL</span>
+                  <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded">AJAX</span>
                 </div>
       
                 <a href="http://epolicesystem.42web.io/DEVBHOMMI/" target="_blank"
@@ -433,43 +433,104 @@
     <section id="contact" class="py-20 px-4 bg-gray-900">
         <div class="container mx-auto max-w-5xl">
             <h2 class="section-title text-center text-3xl font-bold text-white mb-8">Contact Me</h2>
-            <form action="php/contact.php" method="POST" class="bg-gray-800 p-8 rounded-lg shadow-2xl space-y-6">
+    
+            <form id="contactForm" class="bg-gray-800 p-8 rounded-lg shadow-2xl space-y-6">
+                <!-- Name Input -->
                 <div class="mb-4">
                     <label for="name" class="block text-sm font-medium text-gray-300">Name</label>
                     <input type="text" id="name" name="name"
                         class="mt-1 block w-full px-4 py-3 bg-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                         placeholder="Enter your name" required>
                 </div>
+    
+                <!-- Email Input -->
                 <div class="mb-4">
                     <label for="email" class="block text-sm font-medium text-gray-300">Email</label>
                     <input type="email" id="email" name="email"
                         class="mt-1 block w-full px-4 py-3 bg-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                         placeholder="Enter your email" required>
                 </div>
+    
+                <!-- Message Input -->
                 <div class="mb-4">
                     <label for="message" class="block text-sm font-medium text-gray-300">Message</label>
                     <textarea id="message" name="message" rows="5"
                         class="mt-1 block w-full px-4 py-3 bg-gray-700 text-white rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                         placeholder="Write your message here..." required></textarea>
                 </div>
-                <!-- Modern & Animated Send Button -->
+    
+                <!-- Send Button -->
                 <div class="text-center">
                     <button type="submit"
                         class="relative inline-flex items-center justify-center px-8 py-3 overflow-hidden font-bold text-white transition-all duration-500 ease-in-out rounded-xl group bg-gradient-to-r from-blue-600 to-purple-600 hover:from-purple-600 hover:to-blue-600 shadow-lg hover:shadow-purple-600/50">
                         <span
                             class="absolute inset-0 w-full h-full bg-gradient-to-br from-transparent via-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                         <span class="relative z-10 flex items-center gap-2">
-                            <svg class="w-5 h-5 text-white animate-pulse group-hover:animate-none" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 10l9 6 9-6-9-6-9 6z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 10l9 6 9-6M4 18h16" />
+                            <svg class="w-5 h-5 text-white animate-pulse group-hover:animate-none" fill="none"
+                                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3 10l9 6 9-6-9-6-9 6z" />
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3 10l9 6 9-6M4 18h16" />
                             </svg>
                             Send Message
                         </span>
                     </button>
                 </div>
             </form>
+    
+            <!-- Success Message (Below form, hidden initially) -->
+            <div id="successMessage"
+                class="hidden mt-6 bg-green-500 text-white px-6 py-4 rounded-lg shadow-xl text-center text-lg font-semibold animate-slideIn opacity-0">
+                Thank you! Your message has been sent🎉
+            </div>
         </div>
+    
+        <!-- Custom CSS for Smooth Animation -->
+        <style>
+            @keyframes slideIn {
+                0% {
+                    opacity: 0;
+                    transform: translateY(20px) scale(0.95);
+                }
+    
+                100% {
+                    opacity: 1;
+                    transform: translateY(0) scale(1);
+                }
+            }
+    
+            .animate-slideIn {
+                animation: slideIn 0.6s ease-out forwards;
+            }
+        </style>
+    
+        <!-- JavaScript for Form Handling & Message -->
+        <script>
+            const form = document.getElementById('contactForm');
+            const successMessage = document.getElementById('successMessage');
+    
+            form.addEventListener('submit', function (e) {
+                e.preventDefault(); // Prevent default form submission
+                // Simulate message sent process
+                setTimeout(() => {
+                    // Show success message with animation
+                    successMessage.classList.remove('hidden');
+                    successMessage.classList.add('opacity-100', 'animate-slideIn');
+    
+                    // Auto-hide after 4 seconds
+                    setTimeout(() => {
+                        successMessage.classList.add('hidden');
+                        successMessage.classList.remove('opacity-100', 'animate-slideIn');
+                    }, 4000);
+    
+                    // Reset form fields
+                    form.reset();
+                }, 500); // You can adjust this time or replace with real API call
+            });
+        </script>
     </section>
+    
     
 </main>
 
