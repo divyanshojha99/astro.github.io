@@ -11,7 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="js/script.js" defer></script>
+    
+    
+    
     <script>
         tailwind.config = {
             darkMode: 'class',
@@ -51,6 +53,7 @@
             <li><a href="#projects" class="nav-link">Projects</a></li>
             <li><a href="#experience" class="nav-link">Experience</a></li>
             <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#coding-profiles" class="nav-link">Coding Profiles</a></li>
             <li><a href="#achievements" class="nav-link">Achievements</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
@@ -63,6 +66,7 @@
             <li class="py-2"><a href="#projects" class="nav-link">Projects</a></li>
             <li class="py-2"><a href="#experience" class="nav-link">Experience</a></li>
             <li class="py-2"><a href="#education" class="nav-link">Education</a></li>
+            <li class="py-2"><a href="#coding-profiles" class="nav-link">Coding Profiles</a></li>
             <li class="py-2"><a href="#achievements" class="nav-link">Achievements</a></li>
             <li class="py-2"><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
@@ -106,11 +110,11 @@
     <!-- About -->
     <section id="about" class="py-20 px-4">
         <div class="container mx-auto max-w-5xl">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title text-center text-3xl font-bold text-white mb-10">About Me</h2>
             <div class="grid md:grid-cols-2 gap-10 items-center">
                 <div class="bg-gray-800 p-6 rounded-lg shadow-xl">
                     <p class="text-lg leading-relaxed mb-4">
-                        I'm a Cybersecurity enthusiast and full-stack developer with proficiency in C++, Python, PHP, and JavaScript. I specialize in building secure web applications.
+                        🎓Hi there! I'm a final-year CSE Master's student, deeply passionate about AI/ML, problem-solving, and full-stack development. Skilled in C++, Python, PHP, and JavaScript, I enjoy turning ideas into real-world solutions!
                     </p>
                     <p class="text-lg leading-relaxed mb-4">
                         Currently working as an IXP Intern at SAP, focusing on Retrieval Augmented Generation (RAG) and contributing to SAP's internal GEN-AI Joule platform to enhance data retrieval and processing capabilities.
@@ -148,7 +152,7 @@
     <!-- Skills -->
     <section id="skills" class="py-20 px-4 bg-gray-800">
         <div class="container mx-auto max-w-5xl">
-            <h2 class="section-title">Skills & Tools</h2>
+            <h2 class="section-title text-center text-3xl font-bold text-white mb-10"">Skills & Tools</h2>
             <div class="mb-12">
                 <h3 class="text-2xl font-semibold mb-6 text-blue-400">Technical Skills</h3>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -259,7 +263,7 @@
     <!-- Projects -->
 <section id="projects" class="py-20 px-4 bg-gray-900">
     <div class="container mx-auto max-w-5xl">
-        <h2 class="section-title">Projects</h2>
+        <h2 class="section-title text-center text-3xl font-bold text-white mb-10">Projects</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div class="bg-gray-800 p-6 rounded-lg shadow-xl hover:transform hover:scale-105 transition-transform">
                 <h3 class="text-xl font-semibold mb-2">Project 1: AI Finance Agent (AstraFi)</h3>
@@ -285,7 +289,7 @@
 <!-- Experience -->
 <section id="experience" class="py-20 px-4">
     <div class="container mx-auto max-w-5xl">
-        <h2 class="section-title">Experience</h2>
+        <h2 class="section-title text-center text-3xl font-bold text-white mb-10">Experience</h2>
         <div class="space-y-8">
             <div class="bg-gray-800 p-6 rounded-lg shadow-xl">
                 <h3 class="text-xl font-semibold mb-2">IXP Intern</h3>
@@ -301,7 +305,7 @@
 <!-- Education -->
 <section id="education" class="py-20 px-4 bg-gray-900">
     <div class="container mx-auto max-w-5xl">
-        <h2 class="section-title">Education</h2>
+        <h2 class="section-title text-center text-3xl font-bold text-white mb-10">Education</h2>
         <div class="space-y-8">
             <div class="bg-gray-800 p-6 rounded-lg shadow-xl">
                 <h3 class="text-xl font-semibold mb-2">Integrated MTech in Computer Science With Cyber Security</h3>
@@ -314,10 +318,29 @@
     </div>
 </section>
 
+<!-- Coding Profiles Section -->
+<section id="coding-profiles" class="py-20 px-4 bg-gray-900">
+    <div class="container mx-auto max-w-5xl">
+        <h2 class="section-title text-center text-3xl font-bold text-white mb-10">Coding Profiles</h2>
+        <div id="profile-container" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+        </div>
+        <!-- Coding Ninjas Profile Card -->
+        <div id="codingNinjasCard" class="mt-4"></div>
+
+        
+        
+    </div>
+</section>
+
+
+
+
+
 <!-- Achievements -->
 <section id="achievements" class="py-20 px-4">
     <div class="container mx-auto max-w-5xl">
-        <h2 class="section-title">Achievements</h2>
+        <h2 class="section-title text-center text-3xl font-bold text-white mb-10">Achievements</h2>
         <div class="space-y-8">
 
             <div class="bg-gray-800 p-6 rounded-lg shadow-xl">
@@ -411,10 +434,13 @@
     
 </main>
 
+  
+
 <!-- Footer -->
 <footer class="py-6 bg-gray-800 text-center text-gray-400">
     <p>&copy; 2024 Divyansh Ojha. All rights reserved.</p>
 </footer>
-
+<script src="profile.js"></script>
 </body>
+
 </html>
